@@ -1,0 +1,285 @@
+.main-header
+{
+margin-top: 5px;
+}
+.notification
+{
+	padding-top: 5px;
+	font-size: 80%;
+
+}
+.right_link_header
+{
+	float:right;
+	margin-right: 10px;
+	text-decoration: none;
+	position :relative;
+	color: #c0c0cc;
+}
+.logo
+{
+    height:70px;
+    width:110px;
+    float: left;
+}
+.nev	
+{
+	margin-left: 120px;
+	margin-top: -20px;
+}
+ul 
+{	
+	position: absolute;
+    list-style-type: none;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li 
+{
+   	float: left;
+}
+li a, .dropbtn
+{
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 22px 20px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn
+{
+    background-color: #c0c0cc;
+    color:#000000;
+}
+li.dropdown
+{
+    display: inline-block;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 168px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover
+{
+	background-color: #ffffff;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+.search-box
+{
+	position: absolute;
+	width: 300px;
+	margin-left:660px;
+	padding-right: 10px;
+	margin-top: 35px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.wish-logo
+{
+	position: absolute;
+	margin-left: 1025px;
+	padding-right: 100px;
+	margin-top: 30px;
+	height: 50px;
+	width: 50px;
+}
+.cart-logo
+{
+	position: absolute;
+	margin-left:1100px;
+	padding-right: 100px;
+	margin-top: 30px;
+	height:50px;
+	width: 50px;
+}
+.woman_banner
+{
+	position: relative;
+	padding-left: -50px;
+	float: left;
+	height: 75%;
+	width: 50%;
+	clear: left;
+}
+.man_banner
+{
+	position: relative;
+	float: left;
+	height: 75%;
+	width: 50%;
+}
+.top-btn-banner
+{
+	text-align: center;
+	background-color: #ffffff;
+	position: absolute;
+	margin-left: 37%;
+    top: 28%;
+    width: 300px;
+  	height: 360px;
+    text-align: center;
+    font-size: 14px;
+}
+.heading-border
+{
+	border-bottom: 2px solid ;
+   	color: #3c3c3c;
+   	font-size: 14px;
+}
+.heading-banner
+{
+	text-align: center;
+	color: #3c3c3c;
+	padding-bottom: 10px;
+
+
+}
+.banner-contain
+{
+	padding-left: 5px;
+	font-family: Arial;
+	text-transform: none;
+	font-size: 14px;
+	color: #3c3c3c;
+}
+.btn-viewmen
+{
+font-size: 18px;
+background-color: #3c3c3c;
+margin-left: 35px;
+margin-right: 35px;
+margin-top: 40px;
+padding-top: 20px;
+text-align: center;
+height: 35px;
+}	
+.btn-viewmen a , .btn-viewwomen a
+{
+color: #fff;
+text-decoration: none;	
+}
+.btn-viewwomen 
+{
+	
+	font-size: 18px;
+	background-color: #3c3c3c;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-top: 12px;
+	padding-top: 20px;
+	text-align: center;
+	height: 35px;
+	clear: left;
+}	
+
+.left-part
+{
+	
+	clear: left;
+	height: 90px;
+	width: 610px;
+	margin-top: 70px;
+	
+	padding-top: 2px;	 
+}
+.midbanner-col1
+{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 28px;
+	margin-left: 100px;
+	background-color: #dcdcdc;
+	height: 50px;
+	padding-top: 25px;
+
+}
+.right-part
+{
+	height: 90px;
+	width: 510px;
+	margin-left: 450px;
+	margin-top: -62px;
+	margin-right: 100px;
+}
+.midbanner-col2
+{
+	text-align: center;
+	font-size: 18px;
+	background-color: #dcdcdc;
+	height: 50px;
+	padding-top: 25px;
+	width: 510px;
+	margin-left: 200px;
+	margin-right:100px; 
+}
+.midbanner-col1 a , .midbanner-col2 a
+{
+	text-decoration: none;
+}
+.img1-row1 
+{
+	
+	margin-left: 100px;
+	margin-top: 25px;
+	width: 510px;
+	height: 300px;
+	
+}
+.img1-row2
+{
+	margin-left: 100px;
+	margin-top: 30px;
+	width: 510px;
+	height: 300px;
+}
+.img2-row1
+{
+	
+	margin-left: 200px;
+	margin-top: 25px;
+
+}
+.img2-row2
+{
+	
+	margin-left: 200px;
+	margin-top: 25px;
+}
+.footer
+{
+	margin-left: 50px;
+	margin-top: 700px;
+}
+.app 
+{
+	font-size: 16px;
+	text-decoration: none;
+
+}
+.googleplay-logo
+{
+	clear: both;
+    float: left;
+    margin-bottom: 16px;
+    width: 130px;
+    height: 40px
+}
+
+
