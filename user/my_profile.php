@@ -6,20 +6,19 @@
 			<div class="col-sm-4">
 				<div class="img-box">
 				</div>
-				<button type="text" class="btn btn-default">choose file</button><br>
-				<input type="text" class="profile-name" placeholder="profile name">
+				<span class="choosefile-btn"><button type="text" class="btn btn-default">choose file</button></span><br>
+				<span class="upload-btn"><button type="text" class="btn btn-default">upload</button></span><br>
 			</div>
 			<div class="col-sm-5">
-				<div class="profile-box">
-		  			<h3>Registration form</h3>
+				<h3>Registration form</h3>
 		  			<form role="form">
 		  				<div class="form-group">
 			      			<label for="first_name">First name:</label>
-			      			<input type="text" class="form-control" id="First_name" placeholder= "Enter first name"value="">
+			      			<input type="text" class="form-control" id="First_name" placeholder= "Enter first name" value="<?=isset($post_data['first_name'])">
 			    		</div>
 			    		<div class="form-group">
 			    			<label for="last_name">Last name:</label>
-			      			<input type="text" class="form-control" id="Last_name" placeholder= "Enter last name"value="">
+			      			<input type="text" class="form-control" id="Last_name" placeholder= "Enter last name" value="">
 			    		</div>
 			    		<div class="form-group">
 			    			<label for="email">Email Id:</label>
@@ -27,11 +26,11 @@
 			    		</div>
 			    		<div class="form-group">
 			    			<label for="user_name">User name:</label>
-			      			<input type="text" class="form-control" disabled="true"  id="user_name" placeholder= "Enter user name" value="">
+			      			<input type="text" class="form-control" disabled="true"  id="user_name" placeholder= "Enter user name" value=" ">
 			    		</div>
 			    		<div class="form-group">
 			    			<label for="password">Password:</label>
-			      			<input type="password" class="form-control" id="password" value="">
+			      			<input type="password" class="form-control" id="password" value=" ">
 			    		</div>
 			    		<div class="form-group">
 			    			<label for="address1">Address1:</label>
@@ -46,8 +45,8 @@
 			      			<input type="text" class="form-control" id="city" placeholder= "Enter city" value="">
 			    		</div>
 			    		<div class="form-group">
-			    			<label for="zip_code">Zip code:</label>
-			      			<input type="number" class="form-control" id="zip_code" placeholder= "Enter zipcode" value="">
+			    			<label for="zipcode">Zip code:</label>
+			      			<input type="number" class="form-control" id="zipcode" placeholder= "Enter zipcode" value="">
 			    		</div>
 			    		<div class="form-group">
 			    			<label for="state">State:</label>
@@ -59,5 +58,6 @@
 			    		</div>
 			    		  <button type="submit" class="btn btn-default">Login</button>
 			   		</form>
+				
 			</div>
-		</div>
+		</div>	

@@ -56,3 +56,19 @@
 	height: 100px;
 	margin-top: 20px;
 }
+.error
+{
+	color: #ff0000;
+}
+.choosefile-btn
+{
+	margin-top: 5px;
+	margin-left: -55px;
+    position: relative;
+}
+.upload-btn
+{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: -55px;
+}

@@ -10,7 +10,6 @@
 		$error_message = '<strong>' . implode(', ', $_SESSION['errors']) . '</strong>';
 		unset($_SESSION['errors']);	
 	}
-	
 	include("includes/header.php");
 	if (isset($message))
 	{
@@ -28,16 +27,16 @@
 	<div class="col-sm-4">
 		<div class="box">
 			<h3>Login</h3>
-			<form role="form" action="controller/user.php">
+			<form role="form" method = "post" action="controller/user.php">
 				<div class="form-group">
 					<label for="user_name">User name: </label>
-					<input type="text" id="user_name" value="">
+					<input type="text" id="user_name" value="<?=isset($post_data['user_name']) ? $post_data['user_name']: ''?> ">
 				</div>
 				<div class="form-group">
 					<label for="password">Password: </label>
-					<input type="password" id="password" value="">
+					<input type="text" id="password" value="<?=isset($post_data['password']) ? $post_data['password']: ''?>">
 				</div>
-				<button type="submit" class = "btn btn-success" value="login">Login</button>
+				<button type="submit" class = "btn btn-success" value = "">Login</button>
 			</form>
 		</div>
 	</div>		
@@ -45,7 +44,7 @@
 
 <?php
 	}
-	echo "user name".$user;
+	echo "user name:".$user;
 
 	include("includes/footer.php");
 ?>	
