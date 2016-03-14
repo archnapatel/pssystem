@@ -1,0 +1,66 @@
+.box
+{
+	width: 350px;
+    height: 250px;
+    padding: 45px;
+    background-color: #efefef;
+    box-shadow: 10px 10px 5px #888888;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.box h3
+{
+	text-align: center;
+}
+.reg-box
+{	
+    height: 1200px;
+    padding: 45px;
+    background-color: #efefef;
+    box-shadow: 10px 10px 5px #888888;
+    margin-top: 50px;
+}
+.reg-box h3
+{
+	text-align: center;
+}
+.btn
+{
+	text-align: center;
+	margin-left: 110px;
+}
+.img-box
+{
+	margin-top: 50px;
+	height: 200px;
+	width: 200px;
+	background-color: #efefef;
+}
+.btn
+{
+	margin-top: 15px;
+    margin-left: 60px;
+    position: absolute;
+}
+.profile-box
+{
+	 height: 1100px;
+    padding: 45px;
+    background-color: #efefef;
+    box-shadow: 10px 10px 5px #888888;
+    margin-top: 50px;
+}
+.profile-name
+{
+	position: relative;
+	height: 100px;
+	margin-top: 20px;
+}
+.error
+{
+	color: #ff0000;
+}
+.file-heandal
+{
+	margin-top: 10px;
+}
