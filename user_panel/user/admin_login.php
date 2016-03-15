@@ -29,14 +29,13 @@
 		include("includes/header.php");
 ?>	
 <div class="container">
-	<div class="col-sm-4">
+	<div class="col-sm-7">
 		<div class="box">
-			<h3>Login</h3>
-			<form role="form" method = "post" action="controller/user_login_controller.php">
+			<h3>Admin login</h3>
+			<form role="form" method = "post" action="controller/admin_login_controller.php">
 				<div class="form-group">
-					<label for="user_name">User name: </label>
-					<input type="text" id="user_name" name="user_name"value="" required>
-					
+					<label for="admin_name">Admin name: </label>
+					<input type="text" id="admin_name" name="admin_name"value="" placeholder="admin name or email" required>
 				</div>
 				<div class="form-group">
 					<label for="password">Password: </label>

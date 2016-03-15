@@ -29,7 +29,7 @@
 	<div class="col-sm-5">
 		<div class="reg-box">
   			<h3>Registration form</h3>
-	  		<form role="form" name = "registration" method = "post" action = "controller/user.php" onsubmit = "return validateForm()">
+	  		<form role="form" name = "registration" method = "post" action = "controller/user_register_controller.php" onsubmit = "return validateForm()">
 	  			<div class="form-group">
 		    		<label for="first_name">First name:</label>
 		    		<input type="text" class="form-control" id="First_name" name="first_name" value="<?=isset($post_data['first_name']) ? $post_data['first_name']: ''?>" placeholder= "Enter first name" required>
@@ -78,8 +78,15 @@
 		    		<label for="country">Country:</label>
 		    		<input type="text" class="form-control" id="country" name="country" value="<?=isset($post_data['country']) ? $post_data['country']: ''?>" placeholder= "Enter country" required>
 		    	</div>
-		    	<button type="submit" class="btn btn-default" name="login" value="login">Login</button>
-		    </form>
+		    	<button type="submit" class="btn btn-default" id="submit"name="login" value="submit">Submit</button>
+				<div class="form-group">
+					<div class="col-sm-4 col-sm-offset-8">
+						<a class="" href="login.php">
+							<span class="glyphicon glyphicon-hand-right">&nbsp;</span>Signin
+						</a>
+					</div>
+				</div>
+			</form>
 		</div>	
     </div>	
 <?php

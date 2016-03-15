@@ -1,7 +1,7 @@
 <?php
 $mysql_username = 'root';
 $mysql_password = 'root';
-$mysql_connection = new PDO("mysql:host=localhost;user_panel", $mysql_username, $mysql_password);
+$mysql_connection = new PDO("mysql:host=localhost;dbname=user_panel", $mysql_username, $mysql_password);
 
 function execute_query($query, $parameters = array())
 {
