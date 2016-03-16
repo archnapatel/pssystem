@@ -28,7 +28,6 @@ include("../config/database.php");
 				if($password == $row['password'])
 				{	
 					$_SESSION['admin'] = $row['admin_name'];
-					//echo $_SESSION['admin'];
 					break;
 				}	
 			}	

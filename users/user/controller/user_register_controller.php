@@ -82,8 +82,8 @@
 
 	if (count($_SESSION['errors']) == 0)
 	{
-		$result = execute_query("INSERT INTO registration (first_name, last_name, email, user_name, password, address1, address2, city, zipcode, state, country) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);", array($first_name, $last_name, $email, $user_name, $password, $address1, $address2, $city, $zipcode, $state, $country));
-		$_SESSION['user'] = $user_name;
+		$result = execute_query("INSERT INTO registration (user_id, first_name, last_name, email, user_name, password, address1, address2, city, zipcode, state, country) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);", array($first_name, $last_name, $email, $user_name, $password, $address1, $address2, $city, $zipcode, $state, $country));
+		$_SESSION['user'] = $user_id;
 		header('location: ../my_profile.php');
 		$_SESSION['message'] = 'Entry has been inserted.';
 	}

@@ -1,12 +1,12 @@
 .box
 {
-	width: 350px;
+	width: 400px;
     height: 250px;
     padding: 45px;
     background-color: #efefef;
     box-shadow: 10px 10px 5px #888888;
     margin-left: 300px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .box h3
 {
@@ -18,7 +18,7 @@
     padding: 45px;
     background-color: #efefef;
     box-shadow: 10px 10px 5px #888888;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .reg-box h3
 {
@@ -73,4 +73,8 @@
     float: right;
     margin-right: 20px;
     text-decoration: none;
+}
+.edit-btn
+{
+    margin-left: 100px;
 }
