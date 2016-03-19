@@ -78,3 +78,10 @@
 {
     margin-left: 100px;
 }
+.adminlogin-status
+{
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-top: -50px;
+}

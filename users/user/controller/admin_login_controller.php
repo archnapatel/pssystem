@@ -20,14 +20,14 @@ include("../config/database.php");
 	}
 	if(count($_SESSION['errors']) == 0)
 	{	
-		$result = get_rows("SELECT admin_name, admin_email, password FROM admin");
+		$result = get_rows("SELECT admin_id, admin_name, admin_email, password FROM admin");
 		foreach ($result as $row) 
 		{
 			if($admin_name == $row['admin_name'] || $admin_name == $row['admin_email'])
 			{
 				if($password == $row['password'])
 				{	
-					$_SESSION['admin'] = $row['admin_name'];
+					$_SESSION['admin'] = $row['admin_id'];
 					break;
 				}	
 			}	

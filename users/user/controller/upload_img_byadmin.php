@@ -1,8 +1,9 @@
 <?php
 	include("../includes/session.php");
 	include("../config/database.php");
-	if(isset($_SESSION['user']))
+	if(isset($_SESSION['admin']))
 	{	
+		echo $id = $_POST['hidden_id'];
 		if(isset($_FILES['file']))
 		{
 			$target_dir = "/var/www/pssystem/users/user/image/";
@@ -18,7 +19,7 @@
 				$_SESSION['errors'][] = "only JPG, JPEG, PNG & GIF files are allowed";
 			}
 			//check file size large or not
-			if ($_FILES["file"]["size"] > 500000)
+			if ($_FILES["file"]["size"] > 5000000)
 			{
  				$_SESSION['errors'][] = "Sorry, your file is too large.";
 			}
@@ -26,18 +27,20 @@
 			{
 				if(move_uploaded_file($_FILES['file']['tmp_name'], $target_file))
 				{
-					$result = execute_query("UPDATE registration SET profile_pic = ? WHERE user_name = ?", array($img_name, $_SESSION['user']));	
+					$result = execute_query("UPDATE registration SET profile_pic = ? WHERE user_id = ?", array($img_name, $_POST['hidden_id']));	
+
 				}
 			}
 			else
 			{
 				echo "Image is not uploaded.";
+				//$_SESSION['user_id'] =  $hidden_id;
 			}
 		}
-		header("Location: ../my_profile.php");
+		header("Location:../edit_profile.php");
 	}
 	else
 	{
-		header("location: ../login.php");
+		header("location: admin_login.php");
 	}	
 ?>

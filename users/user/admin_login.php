@@ -1,8 +1,8 @@
 <?php
 	include("includes/session.php");
-	if(isset($_SESSION['user']))
+	if(isset($_SESSION['admin']))
 	{
-		unset($_SESSION['user']);
+		unset($_SESSION['admin']);
 	}
 
 	if (isset($_SESSION['message']))

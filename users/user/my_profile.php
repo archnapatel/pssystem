@@ -5,6 +5,7 @@
 	{
 		$result = get_rows("select first_name, last_name, email, user_name, password, address1, address2, city, zipcode, country, state, zipcode, profile_pic from  registration where user_name = ?",
 		array($_SESSION['user']));
+
 		$array_user_data = array();
 		foreach ($result as $row) 
 		{
@@ -24,15 +25,15 @@
 <div class="login_icon">
 	<ul class="login-status">
 		<li><a href="#"><span class="glyphicon glyphicon-user"></span>
-		<?php  echo "Welcome ".ucfirst($_SESSION['user']); ?></a></li>
+		<?php  echo "Welcome ".$_SESSION['user']; ?></a></li>
 		<li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 	</ul>
 </div>
 <div class="container-fluid content">
 	<div class="col-md-3">
-		<form method="post" action="controller/upload_img.php" enctype="multipart/form-data">
+		<form method="post" action="controller/upload_img_byuser.php" enctype="multipart/form-data">
 			<div class="img-box">
-			<!--<img src="">-->
+			<img src='image/<?php echo $array_user_data['profile_pic'] ?>' height='200px' width='200px'>		
 			</div>
 			<div class="file-heandal">
 				<input type="file" name="file">
@@ -42,7 +43,7 @@
 	</div>
 	<div class="col-sm-5">
 		<h3> My profile</h3>
-			<form name="profile" role="form" method="post" action="controller/edit_profile_controller.php" >
+			<form name="profile" role="form" method="post" action="controller/edit_profile_byuser.php" >
 	  			<div class="form-group">
 		      		<label for="first_name">First name:</label>
 		      		<input type="text" class="form-control" id="first_name" name="first_name" value="<?php if(isset($array_user_data['first_name'])) {echo $array_user_data['first_name'];} ?> ">
