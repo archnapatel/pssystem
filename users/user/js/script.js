@@ -3,7 +3,7 @@ function validateForm()
 {	
 	/* first name validation */
  	var first_name = document.forms["registration"]["first_name"].value;
-    var reg = /[a-z]^A-Z]*$/
+    var reg = /[a-zA-Z]*$/
  	if (reg.test(first_name))
 	{
  		return true; 
@@ -14,7 +14,7 @@ function validateForm()
  	}
  	/* last name validation */
  	var last_name = document.forms["registration"]["last_name"].value;
-    var reg = /[a-z]^[A-Z]*$/
+    var reg = /[a-zA-Z]*$/
  	if (reg.test(last_name))
 	{
  		return true; 
@@ -58,7 +58,7 @@ function validateForm()
  	}
  	/* zipcode validation */
  	var zipcode = document.forms["registration"]["zipcode"].value;
-    var reg = /^[0-9]{5}(?:-[0-9]{4})?$/;
+    var reg = /^[0-9]{6}*$/;
  	if (reg.test(zipcode))
 	{
  		return true; 
